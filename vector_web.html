@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Utrecht's  Tree Cover</title>
+		<title>Vector Data and Common GIS operations</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css_generic/main.css" />
@@ -19,8 +19,8 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Vector Data Analysis</h1>
-						<p>Number of Trees in Utrecht Choropleth Map</p>
+						<h1>Vector Data and Common GIS operations</h1>
+						<p> Maps for spatial planning regarding tree cover in Utrecht </p>
 					</header>
 
 				<!-- Main -->
@@ -35,33 +35,120 @@
 										height="600"
 										src="https://uni-utrecht.maps.arcgis.com/apps/instant/atlas/index.html?appid=20b9b641909a4f31ab79e3eb5fae57f2">
 								</iframe>
+								
+								<h2>Context</h2>
+								<p> SDG goal 15 states: "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss". The Goal has 12 targets to be achieved by 2030, and progress towards targets will be measured by 14 indicators.
+								Considering the importance of trees in maintaining in local ecosystems 7 biodiversity, and the harmful effect of invasive tree species can have on them, it is essential to include data on a region's biodiversity in urban planning. 
+								By condenscing and transforming tree data consisting of large lists of tree types, and their locations, into these map that provide a visually representation of that data. This enables previously challenging information to be easily read and interpreted, likely revealing new information. 
+								This way, these maps can provide valuable information to guide policy decisions on which measures to promote tree growth and reduce impact of invasive species (SDG indicators <a href="https://unric.org/nl/duurzame-ontwikkelingsdoelstellingen/sdg-15/">15.8 & 15.9</a>), and where they have to be placed.
+								Notably, Utrecht has a Green Structure Plan 2017-2030, which aims to better use green and blue infrastructure and restore ecosystems. Thus, in its urban planning for sustainable urbanization, it considers the importance of trees in improving air quality, reducing urban heat island effect, and CO2 sequesteration; or the positive influence of living nature for a healthier city." </p>
+								
 								<h2>Map Description</h2>
-								<p>This map reveals the distribution of trees between the districts in the Province of Utrecht. It enables the comparison of the tree density between the districts to manage and work towards improving on indicators under SDG 15: Life on Land.</p>
-								<p> It states: "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss". The Goal has 12 targets to be achieved by 2030. Progress towards targets will be measured by 14 indicators.</p>
+								<p>This map, revealing the distribution of trees between the neighborhoods in the Province of Utrecht, can help guide Utrecht's Green Structure plan and achieving SDG 15. The Interactive map uses the number of trees ("Count of Points")as the attribute for the choropleth map, the second map (Figure 1) uses the rate-area as the attribute.
+								Since the rate-area map uses proportional data, and displays proportional data (the number of trees per square metre of a neighborhood), its information is more relevant for sustainable urban planning, rather than the interactive Tree Count map. 
+								Acordingly, from the kernel density maps, we can see that they are most concentrated towards Oost, 20kms from Utrechtse Heuvelrug National Park. This reveals the importance of establishing and  maintaining national parks for indicator 15.a on strategic conservation efforts.</p>
+								 
+								
 								<h2>Map Making Process</h2>
 								<p>The map was made using vector data on the number and type of trees in each District in Utrecht publicly available in The Netherlands. The vector data was then transformed into a Choropleth Map on ArcGIS Pro to provide a visual understanding about the distrubution of trees between Districts in Utrecht. </p>
 							</section>
+							
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css_generic/noscript.css" /></noscript>
+	</head>
+	
+	<body class="is-preload">
 
-					</div>
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+							
+							<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Maps</h2>
+							<p>The three maps about Tree Cover distrubution across Utrecht</p>
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/tree_count_attribute_map.png" class="image">
+										<img src="images/tree_count_attribute_map.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 1. Tree Count Choropleth Map</h3>
+										<p>The number of Trees across neighborhoods in Utrecht.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/2.png" class="image">
+										<img src="images/2.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 2. Rate Area Choropleth Map</h3>
+										<p>The number of Trees per square meter across neighborhoods in the Utrecht.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/1.png" class="image">
+										<img src="images/1.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 3. Tree Number Kernel Density Heat Map</h3>
+										<p>a map highlighting those neighborhoods with the highest tree density. The darker an area is (such as blue), the higher density it represents.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li> 
+										</ul>
+									</div>
+								</article>
+					</section>
+							
+
+					
+
+<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css_generic/noscript.css" /></noscript>
+	</head>
+	
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+						<h4>Skills Developed</h4>
+											<ul>
+												<li>Processing Vector Data</li>
+												<li>Conducting Vector Data Analysis & Spatial Trend Analysis on Arcgis Pro</li>
+												<li>Create Thematic Choropleth Maps & Kernel Density Heat Maps </li>
+												<li>Map Design & Stylization</li>
+												<li>Creating Web Maps on Esri Online</li>
+											</ul>
+							
 							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" class="button">Experience</a></li>
 							</ul>
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Contact Me</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
 								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
+								<dd>+31 647711425</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd><a href="mailto:priyalranka2609@gmail.com">priyalranka2609@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>

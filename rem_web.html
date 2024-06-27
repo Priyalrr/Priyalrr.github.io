@@ -29,33 +29,112 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<span class="image main"><img src="images/rem_website.png" alt="" /></span>
-								<h2>Map Description</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
+								
+								<h2>Context</h2>
+								<p>While in a Digital Terrain Model (DTM) you can see the mode fields, in a Digital Surface Model (DSM) you can see trees, buildings, but loose variations in height. Finally, an REM shows more variations in height and showcases greater detail. In these Digital Elevation Models, color variations reflect the height/elevation. In cartographic design, changing color schemes can make different perspectives and information pop-out.</p>
+								
+								<h2>Map Description & Purpose</h2>
+								<p>This REM displays rivers and areas in the Netherlands that are highly controlled: regions along the Hollandse Waterlinie. The area in Holland that I chose covered three tiles (namely N1, Z1 & Z2), South-East of Amsterdam (as shown in Figure 1 below). I chose this area because Hollandse Waterlinie passes through it, and thus would enable me to create a Relative Elevation Model of the chosen area using the Waterlinie as a reference point.</p>
+								<p>From the colors, it is noticeable that along the Waterlinie, the slope increases from downstream to upstream. Additionally, the land, whiter than the river, appears to have a lower elevation. This, I understood is because most land in the Netherlands were built below sea level and are protected by dikes. Given the  whitness of the top regions surrounding the Waterlinie, it seems like this region with the lowest elevations in this REM is prone to floodings. Furthermore, from Figure 4. of the DEM and REM layers together, the darkest blue region on the map, is in Muiden in the East; the higher elevation can be explained by the Castle: Kasteel Muiderslot.</p> 
+								
 								<h2>Map Making Process</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<p>This REM was derived from a DTM sourced from LiDAR data. After importing the datasets to QGIS, and creating a shadow layer over the DTM, the colors confirmed that the river was at an elevation of 0, while the surrounding dikes were at a higher one, and the land area being mostly at lower elevation values.</p> 
+								<p>We conducted a spatial interpolation using Triangle Irregular Network (TIN) method to find the value of the regions surrounding the Waterlinie, using the Waterlinie (has a known value of 0) as a reference point. This formed a new layer in which an elevation value was given to a feature is based on its relationship to the Waterlinie.</p>
+								<p>Finally, to obtain the REM values of the surrounding areas, we subtracted the interpolated values from these manually cross-sectional values of the river edges. The final REM, compared to the initial DEM, shows starker differences in the color in the landscape surrounding the river. There is a starker color gradient, with whiter regions representing lower elevations, and darker blue regions representing higher ones.</p>
 							</section>
 
 					</div>
+					
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css_generic/noscript.css" /></noscript>
+	</head>
+	
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+							
+							<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Maps</h2>
+							<p></p>
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/Location_rem.png" class="image">
+										<img src="images/Location_rem.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 1. Map of the Region of Interest</h3>
+										<p> in the regions of Muiden, Muiderberg, Weesp, Hinderdam, and Hilversumse Meent.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/rem_large.png" class="image">
+										<img src="images/rem_large.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 2.DEM & REM Combined</h3>
+										<p>REM in the regions of Muiden, Muiderberg, Weesp, Hinderdam, and Hilversumse Meent.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/og.png" class="image">
+										<img src="images/og.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 3. Only REM layer</h3>
+										<p>REM of selected region South-east of Amsterdam, where the waterline passes through. Bluer regions have a higher elevation than whiter ones. </p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/colordif.png" class="image">
+										<img src="images/colordif.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 4. REM with a different color scheme</h3>
+										<p>REM of selected region South-east of Amsterdam, where the waterline passes through. Orange regions have a higher elevation.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li> 
+										</ul>
+									</div>
+								</article>
+					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+						<h4>Skills Developed</h4>
+											<ul>
+												<li>Knowledge about Digital Elevation Models (DSM, DTM, AND REM)</li>
+												<li>Working with Raster Data and Tiff files</li>
+												<li>Transforming satellite imagery into informative maps</li>
+												<li>Computing QGIS functions including Raster Calculations & Interpolation</li>
+											</ul>
+							
 							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" class="button">Experience</a></li>
 							</ul>
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Contact Me</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
 								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
+								<dd>+31 647711425</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd><a href="mailto:priyalranka2609@gmail.com">priyalranka2609@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>

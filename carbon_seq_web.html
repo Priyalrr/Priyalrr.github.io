@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Carbon Sequesteration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css_generic/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css_generic/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Carbon Sequesteration</h1>
+						<p>A map to aid Carbon offset efforts in the Himalayan North of India</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								
+								<iframe
+										id="Carbon Sequesteration in Uttarakhand"
+										title="Carbon Sequesteration in Uttarakhand"
+										width="900"
+										height="600"
+										src="https://priyalranka-2609.projects.earthengine.app/view/carbonsequesterationuttarakhand">
+								</iframe>
+								
+								<h2>Context</h2>
+								<p>Land cover is the observed physical cover of the Earth’s surface and has a significant influence on sustainable development, climate change and biodiversity conservation, food security, disaster risk. There are countless different ways to classification land cover and this process is an important part of environmental monitoring.</p> 
+								<p>As part of SDG 13. Climate action, government policy and action plans to achieve carbon offsets have been on the rise globally. In the last two decades, many protected areas and national parks in forested regions have been established. Statistical and visual data on maps can provide important information to guide such decision-making.</p>
+								<p>The main variable to ascertain the carbon storage potential of an area is called the Carbon Storage Potential Index (CSPI).It depends on three other variables: First, the Gross Primary Product (GPP), which is how much carbon a forest unit can take-in from atmosphere and convert into vegetation. Second, the aboveground carbon density (ACD) is the mass of forest biomass per unit volume of the forest unit. An area with high ACD is usually more forested (high forest cover (FC)). Therefore, the CSPI is the ratio of GPP to the vegetation biomass in an area. Essentially, how much more carbon can be put into the forest before it reaches full capacity. It is needed to determine which management units have low sequestration potential and should be protected (high ACD, high GPP, high FC, and low CSPI), and which ones have high sequestration potential and should be reforested/afforested (low ACD, high GPP, low FC, and high CSPI).  Low CSPI areas have already saturated in their carbon storage capacity. While High CSPI indicates that lots of plants have a high capacity for carbon storage but are not grown into forests.</p>
+								
+								<h2>Map Description & Purpose</h2>
+								<p>This map displays the CSPI in the regions in and around the state of Uttarakhand (in northern India) and its border with Nepal (Figure 1.). The purpose of this map is to aid forest management and guide carbon offset efforts on a regional scale. This map displays regions with high carbon density that need to be protected. Additionally, it reveals those areas that have potential to store carbon.</p>
+								<p> As for the interpretation of this map of Uttarakhand, the ACD values were only computed for a small portion of my ROI at the border between Uttarakhand and Nepal. This part of the map is shown in Figure 3.   
+									Most of this zoomed-in region at the Uttarakhand and Nepal border has a high ACD (Greener) and high GPP (redder). This could mean that its forested region is likely saturated in terms of carbon storage, and thus has low CSPI. But since it has reached maximum carbon storage capacity, it should be protected/conserved. 
+									Furthermore, the tiny, blackened region at the bottom left of Figure 4 shows the region surrounding Dhangadhi, Nepal, and indicates a low ACD and high GPP, and thus has the potential to sequester carbon from the atmosphere if forested. <p>
+								
+								<h2>Map Making Process</h2>
+								<p>This project involved mostly working with code in GEE. The satellite imagery of Uttarakhand was obtained from an open source GeoJSON and converted to a shapefile. This shapefile was then imported to the GEE code, to perform calculations to obtain the ACD, FC, GPP, to finally measure the CSPI of management units within my region of interest.</p>
+								
+							</section>
+
+					</div>
+					
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css_generic/noscript.css" /></noscript>
+	</head>
+	
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+							
+							<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Maps and Details</h2>
+							<p></p>
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/figure_1_carbon.png" class="image">
+										<img src="images/figure_1_carbon.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 1. ROI, Figure 2. CSPI Map</h3>
+										<p>Region of Interest: Uttarakhand and its borders with Himachal Pradesh, Tibet and Nepal.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/zoomed_acd.png" class="image">
+										<img src="images/zoomed_acd.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 3. Zoomed-in and highlighted ACD layer</h3>
+										<p>ACD in the East of Uttarakhand, and its border with Nepal. Greener in the north with a high ACD and more forested, and blacker in the south, with low ACD and less forested.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/nepal.png" class="image">
+										<img src="images/nepal.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Figure 4. Areas with high CSPI and potential reforestation/afforestation targets (Dhangadhi region)</h3>
+										<p>Dhangadhi and surrounding region having a High GPP and low ACD, hence has a high CSPI.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Expand</span></li> 
+										</ul>
+									</div>
+								</article>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+						<h4>Skills Developed</h4>
+											<ul>
+												<li>Working with code on Google Earth Engine</li>
+												<li>Working with Shapefiles files</li>
+												<li>Processing & analysing raster data</li>
+												<li>Transforming satellite imagery into informative maps</li>
+											</ul>
+							
+							<ul class="actions">
+								<li><a href="#" class="button">Experience</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contact Me</h2>
+							<dl class="alt">
+								<dt>Phone</dt>
+								<dd>+31 647711425</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:priyalranka2609@gmail.com">priyalranka2609@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
