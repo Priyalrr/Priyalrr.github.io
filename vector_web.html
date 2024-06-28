@@ -23,7 +23,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Vector Data and Common GIS operations</h1>
-						<p> Maps for spatial planning regarding tree cover in Utrecht </p>
+						<p> Maps for spatial planning regarding tree cover in Utrecht in 2024</p>
 					</header>
 
 				<!-- Main -->
@@ -34,26 +34,25 @@
 								<iframe
 										id="Tree Vector Data Ananlysis"
 										title="Tree Vector Data Ananlysis"
-										width="900"
+										width="1050"
 										height="600"
 										src="https://uni-utrecht.maps.arcgis.com/apps/instant/atlas/index.html?appid=20b9b641909a4f31ab79e3eb5fae57f2">
 								</iframe>
 								
 								<h2>Context</h2>
-								<p> SDG goal 15 states: "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss". The Goal has 12 targets to be achieved by 2030, and progress towards targets will be measured by 14 indicators.
-								Considering the importance of trees in maintaining in local ecosystems 7 biodiversity, and the harmful effect of invasive tree species can have on them, it is essential to include data on a region's biodiversity in urban planning. 
-								By condenscing and transforming tree data consisting of large lists of tree types, and their locations, into these map that provide a visually representation of that data. This enables previously challenging information to be easily read and interpreted, likely revealing new information. 
-								This way, these maps can provide valuable information to guide policy decisions on which measures to promote tree growth and reduce impact of invasive species (SDG indicators <a href="https://unric.org/nl/duurzame-ontwikkelingsdoelstellingen/sdg-15/">15.8 & 15.9</a>), and where they have to be placed.
-								Notably, Utrecht has a Green Structure Plan 2017-2030, which aims to better use green and blue infrastructure and restore ecosystems. Thus, in its urban planning for sustainable urbanization, it considers the importance of trees in improving air quality, reducing urban heat island effect, and CO2 sequesteration; or the positive influence of living nature for a healthier city." </p>
+								<p>SDG Goal 15 aims to protect, restore, and promote the sustainable use of terrestrial ecosystems, manage forests sustainably, combat desertification, and halt land degradation and biodiversity loss. It has 12 targets to achieve by 2030, measured by 14 indicators.
+								In line with this, Utrecht has a <a href="https://oppla.eu/casestudy/19311">Green Structure Plan</a> 2017-2030 focused on using green and blue infrastructure and restoring ecosystems. In urban planning, it aims to considers the benefits of trees in improving air quality, reducing the urban heat island effect, and sequestering CO2, as well as their positive influence on creating a healthier city.</p>
+								<p>Thus, recognizing the importance of trees in local ecosystems and the negative impact of invasive species, it is crucial to include biodiversity data in urban planning. Hence, this project aims to transform tree data into informative maps, making complex information easy to interpret and potentially revealing new insights. The following maps can guide policy decisions on promoting tree growth and reducing the impact of invasive species in Utrecht, relevant to <a href="https://unric.org/nl/duurzame-ontwikkelingsdoelstellingen/sdg-15/">SDG indicators 15.8 & 15.9</a> & the Green Structure Plan.</p>
+								<p>As for the two types of maps created in this project: while a choropleth map is a type of map that shows the percentage or distribution of a variable of interest within geographical boundaries, a heat map does not have any correlation to geographical or societal boundaries and instead represents the density/intensity of data points (trees in this case) in a given area by using colors or shading.</p>								<p>
 								
 								<h2>Map Description</h2>
-								<p>This map, revealing the distribution of trees between the neighborhoods in the Province of Utrecht, can help guide Utrecht's Green Structure plan and achieving SDG 15. The Interactive map uses the number of trees ("Count of Points")as the attribute for the choropleth map, the second map (Figure 1) uses the rate-area as the attribute.
-								Since the rate-area map uses proportional data, and displays proportional data (the number of trees per square metre of a neighborhood), its information is more relevant for sustainable urban planning, rather than the interactive Tree Count map. 
-								Acordingly, from the kernel density maps, we can see that they are most concentrated towards Oost, 20kms from Utrechtse Heuvelrug National Park. This reveals the importance of establishing and  maintaining national parks for indicator 15.a on strategic conservation efforts.</p>
+								<p>These map, revealing the distribution of trees between the neighborhoods in the Province of Utrecht, can help guide Utrecht's Green Structure plan and achieving SDG 15. The Interactive map above (Figure 1 in the Map gallery below) uses the number of trees ("Count of Points") as the attribute for the choropleth map, the second choropleth map (Figure 2 in the Map gallery below) uses the rate-area (the number of trees per square metre of a neighborhood) as the attribute.
+								Since the rate-area map uses and displays proportional data, it is more relevant for sustainable urban planning, rather than the interactive Tree Count map. 
+								Acordingly, from the kernel density map (Figure 3 below), we can see that they are most concentrated towards Oost, 20kms from Utrechtse Heuvelrug National Park. This reveals the importance of establishing and  maintaining national parks for indicator 15.a on strategic conservation efforts.</p>
 								 
 								
 								<h2>Map Making Process</h2>
-								<p>The map was made using vector data on the number and type of trees in each District in Utrecht publicly available in The Netherlands. The vector data was then transformed into a Choropleth Map on ArcGIS Pro to provide a visual understanding about the distrubution of trees between Districts in Utrecht. </p>
+								<p>The map was made using vector data on the number and type of trees in each neighborhood in Utrecht publicly available in The Netherlands. The vector data was then transformed into a Choropleth Map and a Heat Kernel Density Map on ArcGIS Pro to provide a visual understanding about the distrubution of trees between neighborhoods in Utrecht. </p>
 							</section>
 							
 	<head>
@@ -79,8 +78,8 @@
 										<img src="images/tree_count_attribute_map.png" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Figure 1. Tree Count Choropleth Map</h3>
-										<p>The number of Trees across neighborhoods in Utrecht.</p>
+										<h3>Figure 1. Tree Count Choropleth Map, 2024</h3>
+										<p>The number of Trees across neighborhoods in Utrecht in 2024.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Expand</span></li>
 										</ul>
@@ -91,8 +90,8 @@
 										<img src="images/2.png" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Figure 2. Rate Area Choropleth Map</h3>
-										<p>The number of Trees per square meter across neighborhoods in the Utrecht.</p>
+										<h3>Figure 2. Rate Area Choropleth Map, 2024</h3>
+										<p>The number of Trees per square meter across neighborhoods in the Utrecht in 2024.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Expand</span></li>
 										</ul>
@@ -103,8 +102,8 @@
 										<img src="images/1.png" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Figure 3. Tree Number Kernel Density Heat Map</h3>
-										<p>a map highlighting those neighborhoods with the highest tree density. The darker an area is (such as blue), the higher density it represents.</p>
+										<h3>Figure 3. Tree Number Kernel Density Heat Map, 2024</h3>
+										<p>a map highlighting those neighborhoods with the highest tree density in 2024. The darker an area is (such as blue), the higher density it represents.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Expand</span></li> 
 										</ul>
@@ -142,7 +141,7 @@
 											</ul>
 							
 							<ul class="actions">
-								<li><a href="#" class="button">Experience</a></li>
+								<li><a href="My_Experience_with_GIS.html" class="button">Experience</a></li>
 							</ul>
 						</section>
 						<section>
@@ -154,14 +153,10 @@
 								<dd><a href="mailto:priyalranka2609@gmail.com">priyalranka2609@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100084506432423" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/Priyalrr" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
